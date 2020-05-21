@@ -61,6 +61,7 @@ namespace FloodSpace
     bool isInWorld(GameWorld recGameWorld);
     void evaluateChance(GameWorld& recGameWorld);
     void printWorld(GameWorld recGameWorld);
+    void destroyWorld(GameWorld& recworld);
 
 }
 

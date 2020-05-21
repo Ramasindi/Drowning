@@ -71,6 +71,7 @@ int main(int argc, char* argv[])
 
 
     }while(blnContinue);
+    destroyWorld(recGameWorld);
 
     return SUCCESS;
 }

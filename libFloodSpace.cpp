@@ -222,7 +222,6 @@ namespace FloodSpace
                        exit(SUCCESS);
                      }
                  }
-
              }
 
     }
@@ -241,4 +240,15 @@ namespace FloodSpace
             cout << endl;
         }
     }
+    void destroyWorld(GameWorld& recworld)
+	{
+		assert(recworld.aryGameArea != nullptr);
+		for(int r = 0; r < recworld.intRows; r++)
+		{
+			delete [] recworld.aryGameArea[r];
+
+		}
+		delete [] recworld.aryGameArea;
+		recworld.aryGameArea = nullptr;
+	}
 }
