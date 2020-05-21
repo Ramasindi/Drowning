@@ -235,7 +235,21 @@ namespace FloodSpace
         {
             for(int c=0;c < recGameWorld.intCols;c++)
             {
-               cout << recGameWorld.aryGameArea[r][c] << " ";
+                if(recGameWorld.aryGameArea[r][c] == EMPTY_SPACE)
+                    cout << FEATURE_SYMBOL[0] << ' ';
+                else if(recGameWorld.aryGameArea[r][c] == FLOOD)
+                {
+                    cout << FEATURE_SYMBOL[FLOOD] << ' ';
+                }
+                else if(recGameWorld.aryGameArea[r][c] == COMPONENT)
+                {
+                    cout << FEATURE_SYMBOL[COMPONENT] << ' ';
+                }
+                else if(recGameWorld.aryGameArea[r][c] == PLAYER)
+                {
+                   cout << FEATURE_SYMBOL[PLAYER] << ' ';
+                }
+               ///cout << recGameWorld.aryGameArea[r][c] << " ";
             }
             cout << endl;
         }
