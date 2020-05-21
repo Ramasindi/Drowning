@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
     bool blnContinue =true;
     do{
 
-        //system("cls");
+        system("cls");
         cout << "************************************************************** \n";
         cout << "**************WELCOME TO THE UTOPIAN LAGOON!****************** \n";
         cout << "************************************************************** \n";

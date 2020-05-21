@@ -236,7 +236,7 @@ namespace FloodSpace
             for(int c=0;c < recGameWorld.intCols;c++)
             {
                 if(recGameWorld.aryGameArea[r][c] == EMPTY_SPACE)
-                    cout << FEATURE_SYMBOL[0] << ' ';
+                    cout << FEATURE_SYMBOL[EMPTY_SPACE] << ' ';
                 else if(recGameWorld.aryGameArea[r][c] == FLOOD)
                 {
                     cout << FEATURE_SYMBOL[FLOOD] << ' ';
